@@ -1,4 +1,9 @@
-# resume-bullet-enhancer
+## Code Examples
+
+### Enhancement Logic
+
+This is the core function that enhances resume bullet points with appropriate action verbs and metrics:
+```python
 # From app.py - Core Enhancement Logic
 def enhance_single_bullet(bullet):
     """Enhance a single bullet point with action verbs and quantifiers."""
@@ -27,7 +32,8 @@ def enhance_single_bullet(bullet):
     enhanced = f"{action_verb} {original_content} {quantifier}"
     
     return enhanced
-    // From static/script.js - Processing API Results
+```
+// From static/script.js - Processing API Results
 function displayResults(data) {
     resultsContent.innerHTML = '';
     
@@ -70,6 +76,7 @@ function displayResults(data) {
     resultsContent.appendChild(table);
     resultsContainer.classList.remove('d-none');
 }
+```
 <!-- From templates/index.html - Main Form Section -->
 <div class="card mb-4">
     <div class="card-header">
@@ -97,6 +104,7 @@ Developed new features for the application"
         </form>
     </div>
 </div>
+```
 /* From static/style.css - Styling for Cards and Animation */
 .card {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -117,6 +125,7 @@ Developed new features for the application"
 #results-container:not(.d-none) {
     animation: fadeIn 0.5s ease-in-out;
 }
+```
 # From app.py - Categorized Action Verbs
 ACTION_VERBS = {
     "leadership": [
@@ -140,3 +149,4 @@ ACTION_VERBS = {
         "Assessed", "Diagnosed", "Examined", "Investigated", "Surveyed"
     ]
 }
+```
