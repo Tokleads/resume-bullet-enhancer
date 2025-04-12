@@ -1,8 +1,11 @@
+
+
 ## Code Examples
 
 ### Enhancement Logic
 
 This is the core function that enhances resume bullet points with appropriate action verbs and metrics:
+
 ```python
 # From app.py - Core Enhancement Logic
 def enhance_single_bullet(bullet):
